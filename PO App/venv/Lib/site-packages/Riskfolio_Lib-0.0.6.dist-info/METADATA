@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: Riskfolio-Lib
+Version: 0.0.6
+Summary: A Python Library for Portfolio Optimization and Strategic Asset Allocation
+Home-page: https://github.com/dcajasn/Riskfolio-Lib
+Author: Dany Cajas
+Author-email: dany.cajas.n@uni.pe
+Maintainer: Dany Cajas
+Maintainer-email: dany.cajas.n@uni.pe
+License: BSD (3-clause)
+Download-URL: https://github.com/dcajasn/Riskfolio-Lib.git
+Project-URL: Documentation, https://riskfolio-lib.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/dcajasn/Riskfolio-Lib/issues
+Project-URL: Personal website, http://financioneroncios.wordpress.com
+Keywords: finance,portfolio,optimization,quant,asset,allocation,investing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: scipy (>=1.0.1)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: cvxpy (>=1.0.25)
+Requires-Dist: scikit-learn (>=0.22.0)
+Requires-Dist: statsmodels (>=0.10.1)
+Requires-Dist: arch (>=4.15)
+
+# Riskfolio-Lib
+
+**Quantitative Strategic Asset Allocation, easy for you.**
+
+<div class="row">
+<img src="https://raw.githubusercontent.com/dcajasn/Riskfolio-Lib/master/docs/source/images/MSV_Frontier.png" height="200">
+<img src="https://raw.githubusercontent.com/dcajasn/Riskfolio-Lib/master/docs/source/images/Pie_Chart.png" height="200">
+</div>
+
+
+## Description
+
+Riskfolio-Lib is a library for making quantitative strategic asset allocation
+or portfolio optimization in Python made in Peru &#x1F1F5;&#x1F1EA;. It is built on top of
+[cvxpy](https://www.cvxpy.org/) and closely integrated
+with [pandas](https://pandas.pydata.org/) data structures.
+
+Some of key functionality that Riskfolio-Lib offers:
+
+* Portfolio optimization with 4 objective functions (Minimum Risk, Maximum Return, Maximum Risk Adjusted Return Ratio and Maximum Utility Function)
+* Portfolio optimization with 10 convex risk measures (Std. Dev., MAD, CVaR, Maximum Drawdown, among others)
+* Risk Parity Portfolio optimization with 7 convex risk measures (Std. Dev., MAD, CVaR, Maximum Drawdown, among others)
+* Worst Case Mean Variance Portfolio optimization.
+* Portfolio optimization with Black Litterman model.
+* Portfolio optimization with Risk Factors model.
+* Portfolio optimization with constraints on tracking error and turnover.
+* Portfolio optimization with short positions and leveraged portfolios.
+* Tools for build efficient frontier for 10 risk measures.
+* Tools for build linear constraints on assets, asset classes and risk factors.
+* Tools for build views on assets and asset classes.
+* Tools for calculate risk measures.
+* Tools for calculate risk contributions per asset.
+* Tools for calculate uncertainty sets for mean vector and covariance matrix.
+* Tools for estimate loadings matrix (Stepwise Regression and Principal Components Regression).
+* Tools for visualizing portfolio properties and risk measures.
+
+
+## Documentation
+
+Online documentation is available at [Documentation](https://riskfolio-lib.readthedocs.io/en/latest/).
+
+The docs include a [tutorial](https://riskfolio-lib.readthedocs.io/en/latest/examples.html)
+with examples that shows the capacities of Riskfolio-Lib.
+
+
+## Dependencies
+
+Riskfolio-Lib supports Python 3.7+.
+
+Installation requires:
+* [numpy](http://www.numpy.org/) >= 1.17.0
+* [scipy](https://www.scipy.org/) >= 1.1.0
+* [pandas](https://pandas.pydata.org/) >= 1.0.0
+* [matplotlib](https://matplotlib.org/) >= 3.3.0
+* [cvxpy](https://www.cvxpy.org/) >= 1.0.15
+* [scikit-learn](https://scikit-learn.org/stable/) >= 0.22.0
+* [statsmodels](https://www.statsmodels.org/) >= 0.10.1
+* [arch](https://bashtage.github.io/arch/) >= 4.15
+
+
+## Installation
+
+The latest stable release (and older versions) can be installed from PyPI:
+
+    pip install riskfolio-lib
+
+
+## Development
+
+Riskfolio-Lib development takes place on Github: https://github.com/dcajasn/Riskfolio-Lib
+
+
+## RoadMap
+
+The plan for this module is to add more functions that will be very useful
+to asset managers.
+
+* Mean Entropic Risk Optimization Portfolios.
+* Add functions to estimate Duration, Convexity, Key Rate Durations and Convexities of bonds without embedded options (for loadings matrix).
+* Add more functions based on suggestion of users.
+
